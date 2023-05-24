@@ -42,6 +42,7 @@
     "react-native": "0.71.7",
     "react-pro-sidebar": "0.7.1",
     "react-redux": "8.0.5",
+    "react-refresh": "^0.14.0",
     "react-router-dom": "6.11.0",
     "react-scripts": "5.0.1",
     "react-simple-maps": "^3.0.0",
@@ -59,5 +60,17 @@
   },
   "devDependencies": {
     "react-scripts": "latest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

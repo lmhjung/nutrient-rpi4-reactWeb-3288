@@ -21,6 +21,8 @@ import Main from "./scenes/main";
 
 
 
+
+
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
