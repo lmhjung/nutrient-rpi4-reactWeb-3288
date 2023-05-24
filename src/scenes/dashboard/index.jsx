@@ -23,7 +23,7 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="ReactBOARD" subtitle="Welcome to this dashboard made with js and react" />
+        <Header title="대시보드" subtitle="Welcome to this dashboard made with js and react" />
 
         <Box>
           <Button

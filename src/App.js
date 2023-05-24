@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import { Box } from "@mui/material";
 import Team from "./scenes/team";
@@ -7,6 +10,8 @@ import { ColorModeContext, useMode } from "./theme";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Dashboard from "./scenes/dashboard";
+import Dashboard2 from "./scenes/dashboard2";
+
 import Contacts from "./scenes/contacts";
 import Sidebar from "./scenes/global/Sidebar";
 import Invoices from "./scenes/invoices";
@@ -37,7 +42,7 @@ function App() {
             {isSidebar && <Sidebar isSidebar={isSidebar} />}
             <Box flexGrow={1}>
               <Routes>
-                <Route path="/" element={<Dashboard />} />
+                <Route path="/" element={<Dashboard2 />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/invoices" element={<Invoices />} />

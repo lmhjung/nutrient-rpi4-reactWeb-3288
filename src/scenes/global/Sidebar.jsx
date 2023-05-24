@@ -82,7 +82,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  DashBoard
+                  대시보드
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -109,10 +109,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  john doe
+                  홍길동
                 </Typography>
                 <Typography variant="h2" color={colors.greenAccent[500]}>
-                  Test protoype
+                  버전 3.52
                 </Typography>
               </Box>
             </Box>
