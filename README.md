@@ -2,7 +2,6 @@
 
 # 지금 작업중 ( Ongoing )
 
-# 3288로 만들어진 양액기 GUI (진행중...)
 ## [Cloned repository](https://github.com/aditya0929/reactBoard)
 
 This project is an admin dashboard built using JavaScript and React.js. It provides a comprehensive user interface for managing and monitoring various aspects of an application or system. The dashboard offers a range of features, including data visualization, user management, and system configuration.
