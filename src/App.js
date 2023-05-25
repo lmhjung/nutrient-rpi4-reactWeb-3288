@@ -22,9 +22,12 @@ import Bar from "./scenes/bar";
 import Pie from "./scenes/Pie";
 import Line from "./scenes/line";
 import Geography from "./scenes/geography";
-import Main from "./scenes/main";
+// import Main from "./scenes/main";
 
 
+
+
+import Device_Data_From_Http from "./devices/irrigation/httpGetData.js";
 
 
 
@@ -37,12 +40,22 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <Topbar setIsSidebar={setIsSidebar} />
+
+          <Device_Data_From_Http setIsSidebar={setIsSidebar} title='페이지제목' />
+
+
+
+          <Topbar setIsSidebar={setIsSidebar} title='페이지제목' />
+
           <main className="content" style={{ display: "flex" }}>
             {isSidebar && <Sidebar isSidebar={isSidebar} />}
             <Box flexGrow={1}>
               <Routes>
                 <Route path="/" element={<Dashboard />} />
+
+
+
+
                 <Route path="/irrigation" element={<Dashboard_irr />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/contacts" element={<Contacts />} />

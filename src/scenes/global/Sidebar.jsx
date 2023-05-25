@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from "react";
+
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -41,11 +42,31 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   );
 };
 
-const Sidebar = () => {
+const gangwon = {
+	resort : ["용평", "평창", "강릉"],
+  print : function(delay = 1000) {
+    setTimeout(() => {
+        console.log(this.resort.join(","));
+        console.log( 'aaa' )
+      }, delay)
+  }
+}
+
+const lordify = function(firstname) {
+  console.log( `베리베리의 ${firstname}라고?!` );   
+	return `베리베리의 ${firstname}라고?!`;
+}
+
+// 베리베리의 연호라고?!
+
+
+
+const Sidebar = ( ) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("dashboard");
+
 
   return (
     <Box
@@ -131,13 +152,24 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
-            <Item
+
+
+
+
+
+            <Item 
               title="양액기(개발중...)"
               to="/irrigation"
               icon={<Spa />}
               selected={selected}
               setSelected={setSelected}
             />
+
+
+
+
+
+
 
             <Typography
               variant="h6"
@@ -146,6 +178,9 @@ const Sidebar = () => {
             >
               Data
             </Typography>
+
+
+
             <Item
               title="Team Portfolio"
               to="/team"

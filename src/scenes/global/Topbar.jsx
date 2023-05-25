@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import React, { useContext } from "react";
 import { Box, IconButton, useTheme } from "@mui/material";
 import { ColorModeContext, tokens } from "../../theme";
@@ -9,10 +11,12 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 
+
 const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
+
 
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
@@ -27,6 +31,21 @@ const Topbar = () => {
           <SearchIcon />
         </IconButton>
       </Box>
+
+
+
+
+      {/* 페이지 타이틀 */}
+      <InputBase 
+        sx={{ ml: 2, flex: 1 }} 
+        id='txtCurrentPageTitle' 
+        value={'55'} 
+        placeholder="현재페이지" 
+      />
+
+
+
+
 
       {/* ICONS */}
       <Box display="flex">
