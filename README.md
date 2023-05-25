@@ -1,4 +1,7 @@
 
+
+# 지금 작업중 ( Ongoing )
+
 # 3288로 만들어진 양액기 GUI (진행중...)
 ## [Cloned repository](https://github.com/aditya0929/reactBoard)
 
