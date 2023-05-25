@@ -15,15 +15,16 @@ import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 import MainChart from "../../components/MainChart";
 
-const Dashboard2 = () => {
+const Dashboard_irr = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="10px">
+
       {/* HEADER */}
-      <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="대시보드2" subtitle="양액관비기 상황" />
+      {/* <Box display="flex" justifyContent="space-between" alignItems="center">
+        <Header title="양액기" subtitle="양액관비기 상황" />
 
         <Box>
           <Button
@@ -39,14 +40,14 @@ const Dashboard2 = () => {
             Download Reports
           </Button>
         </Box>
-      </Box>
+      </Box> */}
 
       {/* GRID & CHARTS */}
       <Box
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
         gridAutoRows="140px"
-        gap="20px"
+        gap="5px"
       >
         {/* ROW 1 */}
         <Box
@@ -68,6 +69,7 @@ const Dashboard2 = () => {
             }
           />
         </Box>
+
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -283,4 +285,4 @@ const Dashboard2 = () => {
   );
 };
 
-export default Dashboard2;
+export default Dashboard_irr;

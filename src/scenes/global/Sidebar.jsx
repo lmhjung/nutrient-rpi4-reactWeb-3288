@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+
+import Spa from "@mui/icons-material/Spa";      // 양약관비기 GUI
+
+
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
@@ -123,6 +127,14 @@ const Sidebar = () => {
               title="HOME"
               to="/"
               icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Item
+              title="양액기(개발중...)"
+              to="/irrigation"
+              icon={<Spa />}
               selected={selected}
               setSelected={setSelected}
             />
